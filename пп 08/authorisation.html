@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./icons/logo_css.svg" alt="Логотип" class="logotype subBlue">
+        <nav id="navigation">
+            <button class="clozeNav whiteText" id="clozeNav" onclick="clozedNav()">+</button>
+            <a href="./index.html" class="linkNav linkNavActive">ГЛАВНАЯ</a>
+            <a href="#fondMain" class="linkNav">О ФОНДЕ</a>
+            <a href="#missionMain" class="linkNav">МИССИЯ</a>
+            <a href="#certificatesMain" class="linkNav">СЕРТИФИКАТЫ</a>
+            <a href="./news.html" class="linkNav">НОВОСТИ</a>
+            <a href="#contacts" class="linkNav">КОНТАКТЫ</a>
+            <a href="./authorisation.html" id="imgAccount"><img src="./icons/btn_account.svg" alt="Перейти в мой профиль" class="imgAccount"></a>
+            <a href="./authorisation.html" class="linkNav linkOpenffice" id="linkOpenffice">ЛИЧНЫЙ КАБИНЕТ</a>
+        </nav>
+        <button class="burger" onclick="openNav()" id="burger"><img src="./icons/btn_burger.svg" alt="Открыть навигацию" class="imgBurger"></button>
+    </header>
+    <main>
+        <section class="autorization">
+            <form action="" method="get" class="formAutorization">
+                <h1>Авторизация</h1>
+                <div class="fieldsAutoriz">
+                    <label for="loginAutoriz">Логин:</label>
+                    <input type="text" name="loginAutoriz" id="loginAutoriz" class="fieldAutoriz">
+                </div>
+                <div class="fieldsAutoriz">
+                    <label for="passwordAutoriz">Пароль:</label>
+                    <input type="password" name="passwordAutoriz" id="passwordAutoriz" class="fieldAutoriz">
+                </div>
+                <input type="submit" value="Войти >>" class="grayButton submitAutoriz">
+                <p>Если у вас ещё нет аккаунта, вы можете <a href="./register.html">зарегистрироваться</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="blockFooter">
+            <a href="#./index.html" class="linkFooter">Главная</a>
+            <a href="#fondMain" class="linkFooter">О фонде</a>
+            <a href="#missionMain" class="linkFooter">Миссия</a>
+            <a href="#certificatesMain" class="linkFooter">Сертификаты</a>
+            <a href="./news.html" class="linkFooter">Новости</a>
+            <a href="./authorisation.html" class="linkFooter">Личный кабинет</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Политика конфидециальности</a>
+            <a href="#" class="linkFooter">Условия использования</a>
+            <a href="#" class="linkFooter">Противодействие коррупции</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Адрес</a>
+            <a href="#" class="linkFooter">Телефон</a>
+            <a href="#" class="linkFooter">Почта</a>
+            <div class="imagesLinkFooter">
+                <img src="./icons/icon_tg.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_vk.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_ya.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_yt.svg" alt="" class="iconNetsFooter">
+            </div>
+        </div> 
+    </footer>
+    <script src="./script.js"></script>
+</body>

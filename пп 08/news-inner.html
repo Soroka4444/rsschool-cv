@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru" id="htmlNewsInner">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./icons/logo_css.svg" alt="Логотип" class="logotype subBlue">
+        <nav id="navigation">
+            <button class="clozeNav whiteText" id="clozeNav" onclick="clozedNav()">+</button>
+            <a href="./index.html" class="linkNav linkNavActive">ГЛАВНАЯ</a>
+            <a href="#fondMain" class="linkNav">О ФОНДЕ</a>
+            <a href="#missionMain" class="linkNav">МИССИЯ</a>
+            <a href="#certificatesMain" class="linkNav">СЕРТИФИКАТЫ</a>
+            <a href="./news.html" class="linkNav">НОВОСТИ</a>
+            <a href="#contacts" class="linkNav">КОНТАКТЫ</a>
+            <a href="./authorisation.html" id="imgAccount"><img src="./icons/btn_account.svg" alt="Перейти в мой профиль" class="imgAccount"></a>
+            <a href="./authorisation.html" class="linkNav linkOpenffice" id="linkOpenffice">ЛИЧНЫЙ КАБИНЕТ</a>
+        </nav>
+        <button class="burger" onclick="openNav()" id="burger"><img src="./icons/btn_burger.svg" alt="Открыть навигацию" class="imgBurger"></button>
+    </header>
+    <main>
+        <section class="newsInner">
+            <div class="infoNewsInner">
+                <h1>Поиск подходов, как часть <br> большого пути к реализации <br> социального проекта</h1>
+                <div class="infoNewsInnerButton">
+                    <button class="grayButton butNewsInner">Все новости >></button>
+                        <button class="dateNewsInner subGreen whiteText">
+                            13.04.2024
+                        </button> 
+                        
+                        <button class="categoryNewsInner subPurple whiteText">
+                            Категория 1
+                        </button>
+                </div>
+            </div>
+            <div class="plans">
+                <div class="textPlans">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae consequuntur aperiam aut? 
+                        Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae consequuntur aperiam aut? 
+                        Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae consequuntur aperiam aut? 
+                        Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae consequuntur aperiam aut? 
+                        Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at? Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae consequuntur aperiam aut? 
+                        Vitae, porro exercitationem quia assumenda dolorum illo ipsa at. Eum doloribus qui 
+                        mollitia aut odio molestias at?
+                    </p>
+                </div>
+                <div class="imgPlans">
+
+                </div>
+            </div>
+            <div class="approaches">
+                <div class="approach approachOne">
+                    <div class="approachImg subYellow">
+                        <img src="./icons/icon_hugs_alone.svg" alt="" class="iconApproach">
+                    </div>
+                    <div class="approachText">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, 
+                            laboriosam officiis ut dolor iusto consectetur error soluta totam officia laudantium repellendus quam! 
+                            Hic deserunt provident culpa magnam eos possimus voluptatum!
+                        </p>
+                    </div>
+                </div>
+                <div class="approachLeft approach approachTwo">
+                    <div class="approachImg subCerulean">
+                        <img src="./icons/icon_sun_alone.svg" alt="" class="iconApproach">
+                    </div>
+                    <div class="approachText">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, 
+                            laboriosam officiis ut dolor iusto consectetur error soluta totam officia laudantium repellendus quam! 
+                            Hic deserunt provident culpa magnam eos possimus voluptatum!
+                        </p>
+                    </div>
+                </div>
+                <div class="approach approachThree">
+                    <div class="approachImg subBlue">
+                        <img src="./icons/icon_heart_alone.svg" alt="" class="iconApproach">
+                    </div>
+                    <div class="approachText">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, 
+                            laboriosam officiis ut dolor iusto consectetur error soluta totam officia laudantium repellendus quam! 
+                            Hic deserunt provident culpa magnam eos possimus voluptatum!
+                        </p>
+                    </div>
+                </div>
+                <div class="approachLeft approach approachFour">
+                    <div class="approachImg subGreen">
+                        <img src="./icons/icon_home_alone.svg" alt="" class="iconApproach">
+                    </div>
+                    <div class="approachText">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, 
+                            laboriosam officiis ut dolor iusto consectetur error soluta totam officia laudantium repellendus quam! 
+                            Hic deserunt provident culpa magnam eos possimus voluptatum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blockForSliderNews">
+                <div class="blockButAndIndicatNews">
+                    <div class="buttonsAndIndicatorsNews">
+                        <button class="listSliderNews listBackNews"><img src="./icons/btn_slide_lft.svg" alt="перелистнуть назад" class="butForSlideNews" id="backButtonNews" onclick="flippingBackNews()"></button> 
+                        <div class="indicatorsNews">
+                            <div class="indicatorNews indicatorBlue" id="circleZeroNews">
+                            </div>
+                            <div class="indicatorNews indicatorWhite" id="circleOneNews">
+                            </div>
+                            <div class="indicatorNews indicatorWhite" id="circleTwoNews">
+                            </div>
+                            <div class="indicatorNews indicatorWhite" id="circleThreeNews">
+                            </div>
+                        </div>
+                        <button class="listSliderNews listNextNews"><img src="./icons/btn_slide_rgt.svg" alt="перелистнуть вперед" class="butForSlideNews" id="nextButtonNews" onclick="flippingNextNews()"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="blockFooter">
+            <a href="#./index.html" class="linkFooter">Главная</a>
+            <a href="#fondMain" class="linkFooter">О фонде</a>
+            <a href="#missionMain" class="linkFooter">Миссия</a>
+            <a href="#certificatesMain" class="linkFooter">Сертификаты</a>
+            <a href="./news.html" class="linkFooter">Новости</a>
+            <a href="./authorisation.html" class="linkFooter">Личный кабинет</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Политика конфидециальности</a>
+            <a href="#" class="linkFooter">Условия использования</a>
+            <a href="#" class="linkFooter">Противодействие коррупции</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Адрес</a>
+            <a href="#" class="linkFooter">Телефон</a>
+            <a href="#" class="linkFooter">Почта</a>
+            <div class="imagesLinkFooter">
+                <img src="./icons/icon_tg.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_vk.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_ya.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_yt.svg" alt="" class="iconNetsFooter">
+            </div>
+        </div> 
+    </footer>
+    <script src="./script.js"></script>
+</body>

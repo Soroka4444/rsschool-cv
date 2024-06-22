@@ -1,0 +1,1625 @@
+/*Стили для всего файла*/
+html{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: inherit;
+}
+
+:root{
+    --colorBlue: #251f73;
+    --colorCerulean: #64c7f3;
+    --colorYellow: #ffdb00;
+    --colorGreen: #5eb296;
+    --colorGray: #e6e6e6;
+    --colorWhite: #ffffff;
+    --colorPink: #ef89ad;
+    --colorPurple: #A59ECE;
+}
+
+@font-face {
+    font-family:"MontserratAlternates-Regular";
+    src: url("./fonts/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Bold";
+    src: url("./fonts/MontserratAlternates-Bold.ttf");
+}
+
+@font-face {
+    font-family:"MontserratAlternates-ExtraBold";
+    src: url("./fonts/MontserratAlternates-ExtraBold.ttf");
+}
+/*Стили для всего файла*/
+
+
+/*Стили для тэгов*/
+section{
+    margin: 50px 8%;
+}
+
+h1{
+    font-family:"MontserratAlternates-ExtraBold";
+    font-size: 36px;
+    color: var(--colorBlue);
+}
+
+h2{
+    font-family:"MontserratAlternates-ExtraBold";
+    font-size: 30px;
+    color: var(--colorBlue);
+}
+
+h3{
+    font-family:"MontserratAlternates-Bold";
+    font-size: 24px;
+    color: var(--colorBlue);
+}
+
+p{
+    font-family:"MontserratAlternates-Regular";
+    font-size: 18px;
+    color: var(--colorBlue);
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-family:"MontserratAlternates-Bold";
+    font-size: 24px;
+}
+
+label{
+    font-family:"MontserratAlternates-Bold";
+    font-size: 24px;
+    color: var(--colorBlue); 
+}
+
+input{
+    font-family:"MontserratAlternates-Regular";
+    font-size: 18px;
+    background-color: var(--colorWhite);
+    color: var(--colorBlue);
+    border: solid 4px var(--colorGray);
+    padding: 6px 10px;
+}
+
+input:hover, 
+input:active, 
+input:focus{
+    border: solid 4px var(--colorBlue);
+    outline: var(--colorBlue);
+}
+
+select{
+    font-family:"MontserratAlternates-Regular";
+    font-size: 18px;
+    background-color: var(--colorWhite);
+    color: var(--colorBlue);
+    border: solid 4px var(--colorGray);
+    padding: 6px 10px;
+}
+
+select:hover, 
+select:active, 
+select:focus{
+    border: solid 4px var(--colorBlue);
+    outline: var(--colorBlue);
+}
+
+option{
+    background-color: var(--colorGray);
+    border: solid 4px var(--colorBlue);
+    outline: var(--colorBlue);
+    color: var(--colorBlue);
+    display: flex;
+}
+
+option:hover, 
+option:active, 
+option:focus{
+    background-color: var(--colorBlue);
+    outline: var(--colorBlue);
+    color: var(--colorWhite);
+}
+/*Стили для тэгов*/
+
+
+/*Общие классы стилей*/
+.grayButton{
+    color: var(--colorBlue);
+    background-color: var(--colorGray);
+}
+
+.grayButton:hover{
+    color: var(--colorWhite);
+    background-color: var(--colorBlue);
+}
+
+
+.whiteText{
+    color: var(--colorWhite);
+}
+
+/*Подложки*/
+.subCerulean{
+    background-color: var(--colorCerulean);
+}
+
+.subYellow{
+    background-color: var(--colorYellow);
+}
+
+.subGreen{
+    background-color: var(--colorGreen);
+}
+
+.subGray{
+    background-color: var(--colorGray);
+}
+
+.subWhite{
+    background-color: var(--colorWhite);
+}
+
+.subPink{
+    background-color: var(--colorPink);
+}
+
+.subPurple{
+    background-color: var(--colorPurple);
+}
+
+.subBlue{
+    background-color: var(--colorBlue);
+}
+
+.mistake{
+    border-color: rgb(174, 41, 41);
+}
+
+/*Подложки*/
+
+/*Иконки*/
+.iconsPosition{
+    position: absolute;
+}
+
+.iconVertically{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconHorizontally{
+    position: relative;
+    display: flex;
+}
+/*Иконки*/
+/*Общие классы стилей*/
+
+
+/*HEADER*/
+    header{
+        margin: 0 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logotype{
+        height: 100px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    nav{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .linkOpenffice{
+        display: none;
+    }
+
+    .linkNav{
+        font-family:"MontserratAlternates-Regular";
+        font-size: 16px;
+        color: var(--colorBlue);
+    }
+
+    .linkNav:hover{
+        color: var(--colorYellow);
+    }
+
+    .linkNavActive{
+        color: var(--colorYellow);
+    }
+
+    .imgAccount{
+        height: 50px;
+    }
+
+    .burger{
+        background-color: #251f73;
+        height: 30px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .clozeNav{
+        font-family:"MontserratAlternates-ExtraBold";
+        font-size: 40px;
+        background-color: transparent;
+        color: var(--colorWhite);
+        transform: rotate(45deg);
+        margin-left: auto;
+        display: none;
+    }
+
+    .imgBurger{
+        height: 60%;
+    }
+/*HEADER*/
+
+
+/*FOOTER*/
+    footer{
+        padding: 50px 8%;
+        background-color: var(--colorBlue);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .blockFooter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .linkFooter{
+        font-family:"MontserratAlternates-Regular";
+        font-size: 16px;
+        color: var(--colorWhite);
+    }
+
+    .linkFooter:hover{
+        color: var(--colorGray);
+    }
+
+    .imagesLinkFooter{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: auto;
+    }
+
+    .iconNetsFooter{
+        height: 40px;
+    }
+/*FOOTER*/
+
+
+/*ГЛАВНАЯ СТРАНИЦА*/
+/*Для всей страницы*/
+    .homePage{
+        margin: 0 0 50px 0;
+    }
+/*Для всей страницы*/
+
+/*Слайдер*/
+    .blockForSlider{
+        background-image: url("./images/photo_main_slider.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+/*Блок текста в слайдере*/
+    .textSlider{
+        padding: 50px 8%;
+        width: 40%;
+    }
+
+    .titleSlider{
+        text-transform: uppercase;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+/*Блок текста в слайдере*/
+
+/*Блок для кнопок и индикаторов*/
+    .blockButAndIndicat{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .buttonsAndIndicators{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+/*Кнопки слайдера*/
+    .listSlider{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+
+    .listSlider:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .butForSlide{
+        height: 40px;
+    }
+/*Кнопки слайдера*/
+
+/*Индикаторы*/
+    .indicators{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .indicator{
+        border-radius: 100%;
+        height: 10px;
+        width: 10px;
+    }
+
+    .indicatorWhite{
+        background-color: var(--colorWhite);
+    }
+
+    .indicatorBlue{
+        background-color: var(--colorBlue);
+    }
+/*Индикаторы*/
+/*Блок для кнопок и индикаторов*/
+/*Слайдер*/
+
+/*Для всех блоков*/
+    .blockMain{
+        margin: 50px 0;
+        padding: 0 8%;
+        height: 340px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .imgBlockMain{
+        width: 460px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .textBlockMain{
+        width: 60%;
+    }
+
+    .textBlockMain p{
+        padding: 20px 0;
+    }
+/*Для всех блоков*/
+
+/*Для блока-декорации*/
+    .blockSunDecoration{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sunDecoration{
+        width: 60%;
+        display: flex;
+        justify-content:space-between;
+        gap: 10px;
+    }
+
+    .sunAnimation{
+        height: 50px;
+    }
+
+    .sunAnimationRight{
+        animation: infinite;
+        animation-duration: 10s;
+        animation-name: rotateRight;
+    }
+
+    .sunAnimationLeft{
+        animation: infinite;
+        animation-duration: 10s;
+        animation-name: rotateLeft;
+    }
+/*Для блока-декорации*/
+
+/*Блок о фонде*/
+    .imgFondMain{
+        background-image: url("./images/photo_russel_hugs.png");
+    }
+/*Блок о фонде*/
+
+/*Блок Миссия*/
+    .imgMissionMain{
+        background-image: url("./images/photo_hand2hand.png");
+    }
+/*Блок Миссия*/
+
+/*Блок Сертификаты*/
+    .imgСertificatesMain{
+        background-image: url("./images/photo_hands.png");
+    }
+
+    .certificatesText{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .certificatesButton{
+        padding: 6px 10px;
+        text-align: start;
+        width: 200px;
+        margin-left: auto;
+    }
+/*Блок Сертификаты*/
+/*ГЛАВНАЯ СТРАНИЦА*/
+
+
+/*СТРАНИЦА ВСЕХ НОВОСТЕЙ*/
+/*Стили для всей секции*/
+/*Стили для всей секции*/
+
+/*Стили для фильтрации*/
+    .titleAndFilters{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filters{
+        display: flex;
+        gap: 10px;
+    }
+
+    .sortDate{
+        padding: 6px 10px;
+        margin: 0 50px;
+    }
+/*Стили для фильтрации*/
+
+/*Стили для блока новости*/
+    .blockNews{
+        width: 100%;   
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+        gap: 40px;
+    }
+
+    .imagesNews{
+        height: 300px;
+        width: 420px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .textNews{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .subTitle{
+        padding: 10px;
+    }
+
+    .dateNews{
+        font-family:"MontserratAlternates-Bold";
+        padding-top: 10px;
+    }
+    
+    .textBlockNews{
+        padding: 10px 0;
+    }
+
+    .buttonsNews{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .buttonNews{
+        width: 180px;
+        padding: 6px 10px;
+        text-align: start;
+    }
+
+    .caterogyNews{
+        width: 200px;
+        padding: 6px 10px;
+        text-align: start;
+    }
+/*Стили для блока новости*/
+
+/*Новость поиск подходов*/
+    .imgSearchApproach{
+        background-image: url("./images/photo_russel_hugs.png");
+    }
+/*Новость поиск подходов*/
+
+/*Новость вместе сильнее*/
+    .imgTogetherStronger{
+        background-image: url("./images/photo_hand2hand.png");
+    }
+/*Новость вместе сильнее*/
+
+/*Новость социальный футбол*/
+    .imgSocialFootball{
+        background-image: url("./images/photo_hands.png");
+    }
+/*Новость социальный футбол*/
+/*СТРАНИЦА ВСЕХ НОВОСТЕЙ*/
+
+
+/*СТРАНИЦА ОДНОЙ НОВОСТИ*/
+/*Для секции*/
+/*Для секции*/
+
+/*Блок категории*/
+    .infoNewsInner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .infoNewsInnerButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    .butNewsInner{
+        width: 280px;
+        padding: 6px 10px;
+        margin-left: auto;
+        text-align: start;
+    }
+
+    .dateNewsInner{
+        width: 220px;
+        padding: 6px 10px;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    .categoryNewsInner{
+        width: 280px;
+        padding: 6px 10px;
+        margin-left: auto;
+        text-align: start;
+    }
+/*Блок категории*/
+
+/*Блок планов*/
+    .plans{
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .textPlans{
+        width: 70%;
+    }
+
+    .imgPlans{
+        height: 100%;
+        width: 320px;
+        background-image: url("./images/photo_russel.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+/*Блок планов*/
+
+/*Блок принципов*/
+    .approach{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .approachLeft{
+        margin-left: 10%;
+        
+    }
+
+    .approachLeftAnimation{
+        animation-duration: 10s;
+        animation-name: approachLeft;
+    }
+
+    .approachRightAnimation{
+        animation-duration: 10s;
+        animation-name: approachRight;
+    }
+
+    .approachImg{
+        height: 80px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconApproach{
+        height: 40px;
+    }
+
+    .approachText{
+        width: 80%;
+    }
+/*Блок принципов*/
+
+/*Слайдер*/
+.blockForSliderNews{
+    background-image: url("./images/photo_hand2hand.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+/*Блок для кнопок и индикаторов*/
+.blockButAndIndicatNews{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.buttonsAndIndicatorsNews{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+/*Кнопки слайдера*/
+.listSliderNews{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.listSliderNews:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.butForSlideNews{
+    height: 40px;
+}
+/*Кнопки слайдера*/
+
+/*Индикаторы*/
+.indicatorsNews{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.indicatorNews{
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+}
+/*Индикаторы*/
+/*Блок для кнопок и индикаторов*/
+/*Слайдер*/
+/*СТРАНИЦА ОДНОЙ НОВОСТИ*/
+
+
+/*СТРАНИЦА РЕГИСТРАЦИИ*/
+    .register{
+        margin: 0;
+        background-image: url("./images/back-autorization.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+/*Форма регистрации*/
+    .formRegister{
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        border: solid 8px var(--colorPurple);
+        margin: 50px 0; 
+        padding: 50px 100px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fieldsRegister{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .fieldRegister{
+        width: 50%;
+    }
+
+    .submitRegister{
+        font-family:"MontserratAlternates-Bold";
+        font-size: 24px;
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        text-align: start;
+    }
+/*Форма регистрации*/
+/*СТРАНИЦА РЕГИСТРАЦИИ*/
+
+
+/*СТРАНИЦА АВТОРИЗАЦИИ*/
+    .autorization{
+        margin: 0;
+        background-image: url("./images/back-autorization.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+/*Форма авторизации*/
+    .formAutorization{
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        border: solid 8px var(--colorPurple);
+        margin: 50px 0; 
+        padding: 50px 100px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fieldsAutoriz{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .fieldAutoriz{
+        width: 60%;
+    }
+
+    .submitAutoriz{
+        font-family:"MontserratAlternates-Bold";
+        font-size: 24px;
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        text-align: start;
+    }
+/*Форма авторизации*/
+/*СТРАНИЦА АВТОРИЗАЦИИ*/
+
+
+/*СТРАНИЦА ЛИЧНОГО КАБИНЕТА*/
+/*Стили для секции*/
+    .personalOffice{
+        margin: 0 0 50px 0;
+    }
+/*Стили для секции*/
+
+/*Информация о пользователе*/
+    .infoAboutPersonal{
+        background-image: url("./images/back-personal-office.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 420px;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        padding: 50px 8%;
+        gap: 50px;
+    }
+
+    .titleInfoAboutPersonal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 66%;
+    }
+
+    .blockInfoAboutPersonal{
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        border: solid 6px var(--colorPurple);
+        margin-top: 50px; 
+        padding: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .textInfoAboutPersonal{
+        font-family:"MontserratAlternates-Bold";
+    }
+/*Информация о пользователе*/
+    
+/*Блок программ*/
+    .myPrograms{
+        margin: 50px 8% 0;
+    }
+
+    .titleMyPrograms{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .blocksPrograms{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .blockProgram{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .textBlockProgram{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        width: 60%;
+    }
+
+    .titleBlockProgram{
+        padding: 20px;
+        height: 40%;
+    }
+
+    .textProgram{
+        margin: 20px;
+    }
+
+    .buttonsBlockProgram{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .buttonParticipation{
+        color: var(--colorBlue);
+        background-color: var(--colorGray);
+        padding: 6px 10px;
+    }
+
+    .buttonParticipation:hover{
+        color: var(--colorWhite);
+        background-color: var(--colorBlue);
+    }
+
+    .participationOn{
+        color: var(--colorWhite);
+        background-color: var(--colorBlue);
+    }
+
+    .addInfoProgram{
+        padding: 6px 10px;
+    }
+
+    .addInfoProgram:hover{
+        background-color: var(--colorBlue);
+    }
+
+    .iconBlockProgram{
+        width: 400px;
+        height: 400px;
+        padding: 90px 40px;  
+    }
+/*Блок программ*/
+/*СТРАНИЦА ЛИЧНОГО КАБИНЕТА*/
+
+
+/*МЕДИА*/
+/*Медиа для тэгов*/
+@media (max-width: 1200px) {
+    h1{
+        font-size: 34px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+    
+    p,
+    input{
+        font-size: 14px;
+    }
+    
+    button,
+    label,
+    select,
+    option{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 990px) {
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+    
+    p,
+    input{
+        font-size: 12px;
+    }
+    
+    button,
+    label,
+    select,
+    option{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 770px) {
+    h1{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 14px;
+    }
+
+    button,
+    label,
+    select,
+    option{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 24px;
+    }
+}
+/*Медиа для тэгов*/
+
+
+/*Медиа для общих классов*/
+/*Медиа для общих классов*/
+
+
+/*Медиа для шапки*/
+@media (max-width: 1200px) {
+    .logotype{
+       height: 80px; 
+    }
+    .linkNav{
+        font-size: 12px;
+    }
+    .imgAccount{
+        height:40px;
+    }
+}
+
+@media (max-width: 990px) {
+    .logotype{
+        height: 60px; 
+     }
+    .linkNav{
+        font-size: 10px;
+    }
+    .imgAccount{
+        height:30px;
+    }
+
+    nav{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--colorBlue);
+        text-align: center;
+        width: 180px;
+        height: 270px;
+        padding: 4px 20px 50px 20px;
+        margin-left: 65%;
+    }
+
+    .linkOpenffice{
+        display: none;
+    }
+
+    .imgAccount{
+        display: none;
+    }
+
+    .linkNav{
+        color: var(--colorWhite);
+    }
+
+    .burger{
+        display: flex;
+    }
+}
+
+@media (max-width: 770px) {
+    nav{
+        margin-left: 58%;
+    }
+}
+
+@media (max-width: 660px) {
+    nav{
+        margin-left: 54%;
+    }
+}
+
+@media (max-width: 550px) {
+    nav{
+        margin-left: 49%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav{
+        margin-left: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    nav{
+        margin-left: 42%;
+    }
+}
+
+@media (max-width: 410px) {
+    nav{
+        margin-left: 37%;
+    }
+}
+/*Медиа для шапки*/
+
+
+/*Медиа для подвала*/
+@media (max-width: 1200px) {
+    .linkFooter{
+        font-size: 12px;
+    }
+    .iconNetsFooter{
+        height:30px;
+    }
+}
+
+@media (max-width: 990px) {
+    footer{
+        padding: 30px 8%;
+    }
+
+    .linkFooter{
+        font-size: 10px;
+    }
+    .iconNetsFooter{
+        height:30px;
+    }
+}
+
+@media (max-width: 770px) {
+    .linkFooter{
+        font-size: 8px;
+    }
+    .iconNetsFooter{
+        height:20px;
+    }
+}
+/*Медиа для подвала*/
+
+
+/*Медиа для главной*/
+@media (max-width: 990px) {
+    .blockForSlider{
+        height: 500px;
+    }
+    .blockMain{
+        flex-wrap: wrap;
+        height: 30%;
+    }
+    .imgBlockMain{
+        width: 100%;
+        height: 400px;
+    }
+    .textBlockMain{
+        width: 100%;
+    }
+}
+@media (max-width: 770px) {
+/*Слайдер*/
+    .blockForSlider{
+        height: 460px;
+    }
+
+    .listSlider,
+    .butForSlide{
+        height: 30px;
+    }
+
+    .textSlider{
+        width: 60%;
+        padding: 30px 8%;
+    }
+
+    .buttonsAndIndicators{
+        width: 60%;
+    }
+    .sunAnimation {
+        height: 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    .imgBlockMain{
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .imgBlockMain{
+        height: 200px;
+    }
+}
+/*Медиа для главной*/
+
+/*Медиа для регистрации*/
+@media (max-width: 1200px) {
+    .submitRegister{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 990px) {
+    .register{
+        height: 1300px;
+    }
+
+    .formRegister{
+        padding: 50px;
+        width: 100%;
+        margin: 50px 8%;
+    }
+
+    .fieldsRegister{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fieldRegister{
+        width: 100%;
+    }
+
+    .submitRegister{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 770px) {
+    .register{
+        height: 1130px;
+    }
+
+    .submitRegister{
+        font-size: 14px;
+    }
+
+    .fieldsRegister{
+        margin-top: 30px;
+    }
+
+    .fieldRegister{
+        margin-top: 10px;
+    }
+}
+/*Медиа для регистрации*/
+
+
+/*Медиа для авторизации*/
+@media (max-width: 1200px) {
+    .submitAutoriz{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 990px) {
+    .autorization{
+        height: 580px;
+    }
+
+    .formAutorization{
+        padding: 50px;
+        width: 100%;
+        margin: 50px 8%;
+    }
+
+    .fieldsAutoriz{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fieldAutoriz{
+        width: 100%;
+    }
+
+    .submitAutoriz{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 770px) {
+    .submitAutoriz{
+        font-size: 14px;
+    }
+
+    .fieldsAutoriz{
+        margin-top: 30px;
+    }
+
+    .fieldAutoriz{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .autorization{
+        height: 530px;
+    }
+}
+/*Медиа для авторизации*/
+
+
+/*Медиа для личного кабинета*/
+@media (max-width: 990px) {
+    .titleInfoAboutPersonal{
+        width: 100%;
+    }
+
+    .blockInfoAboutPersonal{
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .infoAboutPersonal{
+        height: 530px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .photoAboutPersonal{
+        height: 200px;
+    }
+
+    .blockProgram{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textBlockProgram{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .iconBlockProgram{
+        height: 100px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titleMyPrograms{
+        gap: 10px;
+    }
+    
+    .sortCategoryMyPrograms{
+        width: 160px;
+    }
+}
+
+
+/*Медиа для личного кабинета*/
+
+
+/*Медиа для всех новостей*/
+@media (max-width: 990px) {
+    .blockNews{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagesNews{
+        width: 100%;
+        height: 440px;
+    }
+
+    .textNews{
+        width: 100%;
+    }
+
+    .textBlockNews{
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .imagesNews{
+        height: 360px;
+    }
+
+    .sortDate{
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .imagesNews{
+        height: 280px;
+    }
+}
+
+@media (max-width: 450px) {
+    .imagesNews{
+        height: 240px;
+    }
+
+    .titleAndFilters{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filters{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sortDate{
+        margin: 0;
+    }
+}
+/*Медиа для всех новостей*/
+
+
+/*Медиа для страницы новости*/
+@media (max-width: 990px) {
+    .blockForSliderNews{
+        height: 500px;
+    }
+    
+    .plans{
+        height: 360px;
+    }
+
+    .blockForSliderNews{
+        height: 300px;
+    }
+} 
+
+@media (max-width: 770px) {
+    .imagesNews{
+        height: 280px;
+    }
+    
+    .blockForSliderNews{
+        height: 460px;
+    }
+
+    .listSliderNews,
+    .butForSlideNews{
+        height: 30px;
+    }
+    
+    .blockButAndIndicatNews{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonsAndIndicatorsNews {
+        width: 60%;
+    }
+
+    .indicatorsNews{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .indicatorNews{
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media (max-width: 735px) {
+    .butNewsInner{
+        width: 180px;
+        margin-top: 30px;
+    }
+
+    .infoNewsInner{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .plans{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
+
+    .textPlans{
+        width: 100%;
+    }
+
+    .imgPlans{
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .blockForSliderNews{
+        height: 240px;
+    }
+
+    .imagesNews{
+        height: 240px;
+    }
+
+    .titleAndFilters{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filters{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sortDate{
+        margin: 0;
+    }
+
+    .approachImg{
+        height: 120px;
+    }
+
+    .blockButAndIndicatNews{
+        padding: 20px 0;
+    }
+}
+/*Медиа для страницы новости*/
+/*МЕДИА*/
+
+
+/*АНИМАЦИИ*/
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+
+    }
+  
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes approachLeft {
+    from {
+        margin-left: 0;
+
+    }
+  
+    to {
+        margin-left: 10%;
+    }
+}
+
+@keyframes approachRight {
+    from {
+        margin-left: 10%;
+
+    }
+  
+    to {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./icons/logo_css.svg" alt="Логотип" class="logotype subBlue">
+        <nav id="navigation">
+            <button class="clozeNav whiteText" id="clozeNav" onclick="clozedNav()">+</button>
+            <a href="./index.html" class="linkNav linkNavActive">ГЛАВНАЯ</a>
+            <a href="#fondMain" class="linkNav">О ФОНДЕ</a>
+            <a href="#missionMain" class="linkNav">МИССИЯ</a>
+            <a href="#certificatesMain" class="linkNav">СЕРТИФИКАТЫ</a>
+            <a href="./news.html" class="linkNav">НОВОСТИ</a>
+            <a href="#contacts" class="linkNav">КОНТАКТЫ</a>
+            <a href="./authorisation.html" id="imgAccount"><img src="./icons/btn_account.svg" alt="Перейти в мой профиль" class="imgAccount"></a>
+            <a href="./authorisation.html" class="linkNav linkOpenffice" id="linkOpenffice">ЛИЧНЫЙ КАБИНЕТ</a>
+        </nav>
+        <button class="burger" onclick="openNav()" id="burger"><img src="./icons/btn_burger.svg" alt="Открыть навигацию" class="imgBurger"></button>
+    </header>
+    <main>
+        <section class="register">
+            <form action="" method="get" class="formRegister" id="formRegister">
+                <h1>Регистрация</h1>
+                <div class="fieldsRegister">
+                    <label for="nameRegister">Имя:</label>
+                    <input type="text" name="nameRegister" id="nameRegister" class="fieldRegister" required>
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="surnameRegister">Фамилия:</label>
+                    <input type="text" name="surnameRegister" id="surnameRegister" class="fieldRegister" required>
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="patronymicRegister">Отчество:</label>
+                    <input type="text" name="patronymicRegister" id="patronymicRegister" class="fieldRegister">
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="dateBurnRegister">Дата рождения:</label>
+                    <input type="date" name="dateBurnRegister" id="dateBurnRegister" class="fieldRegister" required>
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="phoneRegister">Телефон:</label>
+                    <input type="tel" name="phoneRegister" id="phoneRegister" class="fieldRegister" required placeholder="+7(___)___-__-__">
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="emailRegister">Почта:</label>
+                    <input type="email" name="emailRegister" id="emailRegister" class="fieldRegister" required>
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="passwordRegister">Пароль:</label>
+                    <input type="password" name="passwordRegister" id="passwordRegister" class="fieldRegister" required>
+                </div>
+                <div class="fieldsRegister"> 
+                    <label for="passwordConfirmRegister">Повтор пароля:</label>
+                    <input type="password" name="passwordConfirmRegister" id="passwordConfirmRegister" class="fieldRegister" required>
+                </div>
+                <input type="submit" value="Войти >>" class="grayButton submitRegister" onclick="validateFormRegister()">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="blockFooter">
+            <a href="#./index.html" class="linkFooter">Главная</a>
+            <a href="#fondMain" class="linkFooter">О фонде</a>
+            <a href="#missionMain" class="linkFooter">Миссия</a>
+            <a href="#certificatesMain" class="linkFooter">Сертификаты</a>
+            <a href="./news.html" class="linkFooter">Новости</a>
+            <a href="./authorisation.html" class="linkFooter">Личный кабинет</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Политика конфидециальности</a>
+            <a href="#" class="linkFooter">Условия использования</a>
+            <a href="#" class="linkFooter">Противодействие коррупции</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Адрес</a>
+            <a href="#" class="linkFooter">Телефон</a>
+            <a href="#" class="linkFooter">Почта</a>
+            <div class="imagesLinkFooter">
+                <img src="./icons/icon_tg.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_vk.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_ya.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_yt.svg" alt="" class="iconNetsFooter">
+            </div>
+        </div> 
+    </footer>
+    <script src="./script.js"></script>
+</body>

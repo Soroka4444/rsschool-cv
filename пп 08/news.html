@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./icons/logo_css.svg" alt="Логотип" class="logotype subBlue">
+        <nav id="navigation">
+            <button class="clozeNav whiteText" id="clozeNav" onclick="clozedNav()">+</button>
+            <a href="./index.html" class="linkNav linkNavActive">ГЛАВНАЯ</a>
+            <a href="#fondMain" class="linkNav">О ФОНДЕ</a>
+            <a href="#missionMain" class="linkNav">МИССИЯ</a>
+            <a href="#certificatesMain" class="linkNav">СЕРТИФИКАТЫ</a>
+            <a href="./news.html" class="linkNav">НОВОСТИ</a>
+            <a href="#contacts" class="linkNav">КОНТАКТЫ</a>
+            <a href="./authorisation.html" id="imgAccount"><img src="./icons/btn_account.svg" alt="Перейти в мой профиль" class="imgAccount"></a>
+            <a href="./authorisation.html" class="linkNav linkOpenffice" id="linkOpenffice">ЛИЧНЫЙ КАБИНЕТ</a>
+        </nav>
+        <button class="burger" onclick="openNav()" id="burger"><img src="./icons/btn_burger.svg" alt="Открыть навигацию" class="imgBurger"></button>
+    </header>
+    <main>
+        <section class="news">
+            <div class="titleAndFilters">
+                <h1>Новости</h1>
+                <div class="filters">
+                    <button class="sortDate grayButton" onclick="sortDate()">Дата</button>
+                    <select name="newsCategory" id="collection" class="sortCategory" onchange="collectionFilter(this.value)">
+                        <option value="categoryOne">Категория 1</option>
+                        <option value="categoryTwo">Категория 2</option>
+                        <option value="categoryThree">Категория 3</option>
+                    </select>
+                </div>
+            </div>
+            <div id="newsContainer">
+                <!--Новость "Поиск подходов"-->
+            <div class="blockNews searchApproach" data-date="2024-03-13" data-collection = "categoryOne">
+                <div class="imgSearchApproach imagesNews">
+                </div>   
+                <div class="textNews">
+                    <div class="subTitle subGreen">
+                        <h2 class="titleBlockNews whiteText">Поиск подходов, как часть большого пути к реализации социального проекта</h2>
+                        <p class="dateNews whiteText">13.03.2024</p>
+                    </div>
+                    <p class="textBlockNews">
+                        Развите социального проекта - процесс не всегда предсказуемый. Порой мероприятия, которые кажутся удачными для достижения целей, на деле не находят отклика у целевой аудитории. Что же делать? Искать новые пути!
+                    </p>
+                    <div class="buttonsNews">
+                        <button class="caterogyNews whiteText subPurple">Категория 1</button>
+                        <button class="grayButton buttonNews">Читать >></button>
+                    </div>
+                </div>
+            </div>
+            <!--Новость "Вместе сильнее"-->
+            <div class="blockNews togetherStronger" data-date="2024-03-10" data-collection = "categoryTwo">
+                <div class="imgTogetherStronger imagesNews">  
+                </div>  
+                <div class="textNews">
+                    <div class="subTitle subYellow">
+                        <h2 class="titleBlockNews whiteText">Вместе мы сильнее Lorem ipsum dolor sit amet consectetur</h2>
+                        <p class="dateNews whiteText">10.03.2024</p>
+                    </div>
+                    <p class="textBlockNews">
+                        Развите социального проекта - процесс не всегда предсказуемый. Порой мероприятия, которые кажутся удачными для достижения целей, на деле не находят отклика у целевой аудитории. Что же делать? Искать новые пути!
+                    </p>
+                    <div class="buttonsNews">
+                        <button class="caterogyNews whiteText subPink">Категория 2</button>
+                        <button class="grayButton buttonNews">Читать >></button>
+                    </div>
+                </div>
+            </div>
+            <!--Новость "Социальный футбол"-->
+            <div class="blockNews socialFootball" data-date="2024-03-20" data-collection = "categoryThree">
+                <div class="imgSocialFootball imagesNews">
+
+                </div>
+                <div class="textNews">
+                    <div class="subTitle subCerulean">
+                        <h2 class="titleBlockNews whiteText">Социальный футбол преобразил жизнь сельских школ псковсой области</h2>
+                        <p class="dateNews whiteText">20.03.2024</p>
+                    </div>
+                    <p class="textBlockNews">
+                        Развите социального проекта - процесс не всегда предсказуемый. Порой мероприятия, которые кажутся удачными для достижения целей, на деле не находят отклика у целевой аудитории. Что же делать? Искать новые пути!
+                    </p>
+                    <div class="buttonsNews">
+                        <button class="caterogyNews whiteText subGreen">Категория 3</button>
+                        <button class="grayButton buttonNews">Читать >></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="blockFooter">
+            <a href="#./index.html" class="linkFooter">Главная</a>
+            <a href="#fondMain" class="linkFooter">О фонде</a>
+            <a href="#missionMain" class="linkFooter">Миссия</a>
+            <a href="#certificatesMain" class="linkFooter">Сертификаты</a>
+            <a href="./news.html" class="linkFooter">Новости</a>
+            <a href="./authorisation.html" class="linkFooter">Личный кабинет</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Политика конфидециальности</a>
+            <a href="#" class="linkFooter">Условия использования</a>
+            <a href="#" class="linkFooter">Противодействие коррупции</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Адрес</a>
+            <a href="#" class="linkFooter">Телефон</a>
+            <a href="#" class="linkFooter">Почта</a>
+            <div class="imagesLinkFooter">
+                <img src="./icons/icon_tg.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_vk.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_ya.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_yt.svg" alt="" class="iconNetsFooter">
+            </div>
+        </div> 
+    </footer>
+    <script src="./script.js"></script>
+</body>

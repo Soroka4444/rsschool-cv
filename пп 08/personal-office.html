@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./icons/logo_css.svg" alt="Логотип" class="logotype subBlue">
+        <nav id="navigation">
+            <button class="clozeNav whiteText" id="clozeNav" onclick="clozedNav()">+</button>
+            <a href="./index.html" class="linkNav linkNavActive">ГЛАВНАЯ</a>
+            <a href="#fondMain" class="linkNav">О ФОНДЕ</a>
+            <a href="#missionMain" class="linkNav">МИССИЯ</a>
+            <a href="#certificatesMain" class="linkNav">СЕРТИФИКАТЫ</a>
+            <a href="./news.html" class="linkNav">НОВОСТИ</a>
+            <a href="#contacts" class="linkNav">КОНТАКТЫ</a>
+            <a href="./authorisation.html" id="imgAccount"><img src="./icons/btn_account.svg" alt="Перейти в мой профиль" class="imgAccount"></a>
+            <a href="./authorisation.html" class="linkNav linkOpenffice" id="linkOpenffice">ЛИЧНЫЙ КАБИНЕТ</a>
+        </nav>
+        <button class="burger" onclick="openNav()" id="burger"><img src="./icons/btn_burger.svg" alt="Открыть навигацию" class="imgBurger"></button>
+    </header>
+    <main>
+        <section class="personalOffice">
+            <div class="infoAboutPersonal">
+                <div class="titleInfoAboutPersonal">
+                    <h1>Личный кабинет</h1>
+                    <div class="blockInfoAboutPersonal">
+                        <p class="textInfoAboutPersonal">
+                            Оролрлотлтло
+                        </p>
+                        <p class="textInfoAboutPersonal">
+                            Длолтгргортл
+                        </p>
+                        <p class="textInfoAboutPersonal">
+                            Илолрлршрдлот
+                        </p>
+                    </div>
+                </div>
+                <img src="./icons/btn_account.svg" alt="" class="photoAboutPersonal">
+            </div>
+            <div class="myPrograms">
+                <div class="titleMyPrograms">
+                    <h2>Мои программы</h2>
+                    <select name="" id="" class="sortCategoryMyPrograms">
+                        <option selected value="participateAdd">Статус участия</option>
+                        <option value="participate">Участвую</option>
+                        <option value="participateOff">Доступные</option>
+                    </select>
+                </div>
+                <div class="blocksPrograms">
+                    <div class="blockProgram">
+                        <div class="textBlockProgram">
+                            <div class="titleBlockProgram subGreen">
+                                <h3 class="whiteText">Сильнее с CSS</h2>
+                            </div>
+                            <p class="textProgram">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                A distinctio tempore facere id eum eaque quibusdam! 
+                                Explicabo unde earum quia quae! 
+                                Amet unde ut quis molestiae dolores impedit facere tempore.
+                            </p>
+                            <div class="buttonsBlockProgram">
+                                <button  class="buttonParticipation participationOn" onclick="participateOn()">Участвовать</button>
+                                <button class="addInfoProgram subGreen whiteText">Скачать описание</button>
+                            </div>
+                        </div>
+                        <img src="./icons/icon_sun_alone.svg" alt="" class="iconBlockProgram subCerulean">
+                    </div>
+                    <div class="blockProgram">
+                        <div class="textBlockProgram">
+                            <div class="titleBlockProgram subPink">
+                                <h3 class="whiteText">Сильнее с CSS</h2>
+                            </div>
+                            <p class="textProgram">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                A distinctio tempore facere id eum eaque quibusdam! 
+                                Explicabo unde earum quia quae! 
+                                Amet unde ut quis molestiae dolores impedit facere tempore.
+                            </p>
+                            <div class="buttonsBlockProgram">
+                                <button  class="buttonParticipation" onclick="participateOn()">Участвовать</button>
+                                <button class="addInfoProgram subPink whiteText">Скачать описание</button>
+                            </div>
+                        </div>
+                        <img src="./icons/icon_home_alone.svg" alt="" class="iconBlockProgram subPurple">
+                    </div>
+                    <div class="blockProgram">
+                        <div class="textBlockProgram">
+                            <div class="titleBlockProgram subCerulean">
+                                <h3 class="whiteText">Сильнее с CSS</h2>
+                            </div>
+                            <p class="textProgram">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                A distinctio tempore facere id eum eaque quibusdam! 
+                                Explicabo unde earum quia quae! 
+                                Amet unde ut quis molestiae dolores impedit facere tempore.
+                            </p>
+                            <div class="buttonsBlockProgram">
+                                <button  class="buttonParticipation" onclick="participateOn()">Участвовать</button>
+                                <button class="addInfoProgram subCerulean whiteText">Скачать описание</button>
+                            </div>
+                        </div>
+                        <img src="./icons/icon_heart_alone.svg" alt="" class="iconBlockProgram subBlue">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="blockFooter">
+            <a href="#./index.html" class="linkFooter">Главная</a>
+            <a href="#fondMain" class="linkFooter">О фонде</a>
+            <a href="#missionMain" class="linkFooter">Миссия</a>
+            <a href="#certificatesMain" class="linkFooter">Сертификаты</a>
+            <a href="./news.html" class="linkFooter">Новости</a>
+            <a href="./authorisation.html" class="linkFooter">Личный кабинет</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Политика конфидециальности</a>
+            <a href="#" class="linkFooter">Условия использования</a>
+            <a href="#" class="linkFooter">Противодействие коррупции</a>
+        </div>
+        <div class="blockFooter">
+            <a href="#" class="linkFooter">Адрес</a>
+            <a href="#" class="linkFooter">Телефон</a>
+            <a href="#" class="linkFooter">Почта</a>
+            <div class="imagesLinkFooter">
+                <img src="./icons/icon_tg.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_vk.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_ya.svg" alt="" class="iconNetsFooter">
+                <img src="./icons/icon_yt.svg" alt="" class="iconNetsFooter">
+            </div>
+        </div> 
+    </footer>
+    <script src="./script.js"></script>
+</body>
